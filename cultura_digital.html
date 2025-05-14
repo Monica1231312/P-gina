@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cultura Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f3f8;
+      color: #2c2c2c;
+    }
+
+    header {
+      background-color: #372948;
+      color: #ffffff;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    main h2 {
+      text-align: center;
+      color: #372948;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    main p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .boton-volver {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: #372948;
+      color: #ffffff;
+      padding: 0.8rem 1.6rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .boton-volver:hover {
+      background-color: #4d3a66;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      main {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+      }
+    }
+    .boton-enlace {
+    display: inline-block;
+      margin-top: 1rem;
+      background-color: #372948;
+      color: #ffffff;
+      padding: 0.8rem 1.6rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s ease, transform 0.2s;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+  }
+
+  .boton-enlace:hover {
+    background-color: #4d3a66;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .carousel-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .carousel {
+    display: flex;
+    animation: slide 15s infinite;
+
+  }
+
+  .carousel img {
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  @keyframes slide {
+    0%   { transform: translateX(0%); }
+    33%  { transform: translateX(-100%); }
+    66%  { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+  }
+  .bloque-trabajo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+
+  }
+
+  .bloque-trabajo h3 {
+    color: #372948;
+    margin: 0 0 0.5rem 0;
+  }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Cultura Digital</h1>
+  </header>
+
+  <main>
+    <h2>Trabajos y Evidencias</h2>
+
+    <div class="bloque-trabajo">
+  <h3>Diagrama de Gantt</h3>
+  <img src="Diagr.png" alt="Flyer" width="800" height="350">
+  <div>
+    <a href="https://docs.google.com/spreadsheets/d/1fgBdx6gkqz3LUdAIPVwm0aWGyUyTUxak/edit?usp=sharing&ouid=102399919004290370719&rtpof=true&sd=truef" target="_blank" class="boton-enlace">Enlace al Diagrama</a>
+  </div>
+</div>
+
+    <div class="carousel-container">
+  <h3 style="color: #372948; margin: 0 0 0.5rem 0;">Calendario de Actividades</h3>
+  <div class="carousel">
+    <img src="Febrero.png" alt="Imagen 1">
+    <img src="Marzo.png" alt="Imagen 2">
+  </div>
+  <div>
+    <a href="https://calendar.google.com/calendar/u/3?cid=MjRzcDA0MjkxQGNic2xwLmVkdS5teA" target="_blank" class="boton-enlace">Enlace al Calendario</a>
+    </div>
+</div>
+
+<div class="carousel-container">
+  <h3 style="color: #372948; margin: 0 0 0.5rem 0;">Reporte y Evidencias</h3>
+  <div class="carousel">
+    <img src="Feb.png" alt="Imagen 1">
+    <img src="Marz.png" alt="Imagen 2">
+  </div>
+  <div>
+    <a href="https://docs.google.com/document/d/1-mD8ZW5Ic0jnLGWZAJdf1iTVRcbYr6wtDTJue8IKfgk/edit?usp=sharing" target="_blank" class="boton-enlace">Enlace al Documento</a>
+    </div>
+</div>
+
+
+
+
+
+    <a href="5.html" class="boton-volver">Volver al Inicio</a>
+  </main>
+</body>
+</html>
