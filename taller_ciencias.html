@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Taller de Ciencias</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {box-sizing: border-box;}
+
+    body {margin: 0; font-family: 'Poppins', sans-serif; background-color: #f4f3f8; color: #2c2c2c;}
+
+    header {background-color: #372948; color: #ffffff; padding: 1rem 2rem; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); position: sticky;top: 0; z-index: 1000;}
+
+    header h1 {margin: 0; font-size: 2.2rem;}
+
+    main {max-width: 1000px; margin: 3rem auto; padding: 2rem; background-color: #ffffff; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);animation: fadeIn 0.6s ease-in-out;}
+
+    main h2 {text-align: center; color: #372948; margin-bottom: 1rem; font-size: 1.8rem;}
+
+    main p {font-size: 1rem; color: #444; line-height: 1.7; text-align: justify;}
+
+    .boton-volver {display: inline-block; margin-top: 2rem; background-color: #372948; color: #ffffff; padding: 0.8rem 1.6rem; border-radius: 10px;text-decoration: none; font-weight: 500; transition: background-color 0.3s ease, transform 0.2s;}
+
+    .boton-volver:hover {background-color: #4d3a66; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);}
+
+    @keyframes fadeIn {from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);}}
+
+    @media (max-width: 768px) {main {margin: 2rem 1rem; padding: 1.5rem;}}
+
+    .video-container {display: flex; justify-content: center; align-items: center; height: 100vh;}
+
+    .bloque-trabajo {display: flex; flex-direction: column; align-items: center; margin-bottom: 3rem;}
+
+  .bloque-trabajo h3 {color: #372948; margin: 0 0 0.5rem 0;}
+  .boton-enlace {display: inline-block; margin-top: 1rem; background-color: #372948; color: #ffffff; padding: 0.8rem 1.6rem; border-radius: 10px;text-decoration: none; font-weight: 500; transition: background-color 0.3s ease, transform 0.2s; display: flex; flex-direction: column; align-items: center; width: 800px;}
+
+  .boton-enlace:hover {background-color: #4d3a66; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);}
+  
+  .carousel-container {width: 100%; max-width: 800px; margin: 2rem auto; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);display: flex; flex-direction: column; align-items: center; margin-bottom: 3rem;}
+
+  .carousel {display: flex; animation: slide 15s infinite;}
+
+  .carousel img {width: 100%; flex-shrink: 0;}
+
+  @keyframes slide {0%{transform: translateX(0%);} 33%  {transform: translateX(-100%);} 66%  {transform: translateX(-200%);} 100% {transform: translateX(0%);}}
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Taller de Ciencias</h1>
+  </header>
+
+  <main>
+  <h2 style="margin-bottom: 0.5rem;">Trabajos y Evidencias</h2>
+
+  <div class="bloque-trabajo">
+    <h3>Video - ¿Economía lineal o circular?, efectos en el medio ambiente</h3>
+    <video width="640" height="360" controls>
+      <source src="Vid.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="bloque-trabajo">
+   <h3>Infografía - Materiales Termoeléctricos</h3>
+   <img src="Infografía.png" alt="Infografía">
+  </div>
+
+  <div class="bloque-trabajo">
+    <h3>Flyer - Materiales Termoeléctricos</h3>
+    <img src="Flyer.png" alt="Flyer">
+    <div>
+      <a href="Infografía y flyer.pdf" target="_blank" class="boton-enlace">Enlace a PDF</a>
+    </div>
+  </div>
+
+
+  <div class="carousel-container">
+    <h3 style="color: #372948; margin: 0 0 0.5rem 0;">Examen</h3>
+    <div class="carousel">
+      <img src="1.png" alt="Imagen 1">
+      <img src="3.png" alt="Imagen 2">
+    </div>
+    <div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQtZg48OOTSFURH9IdrvWRDakKq7hpm4fcoZTmIPlJP1Ku_A/viewform?usp=header" target="_blank" class="boton-enlace">Enlace al Formulario</a>
+    </div>
+  </div>
+
+  <a href="5.html" class="boton-volver">Volver al Inicio</a>
+  </main>
+</body>
+</html>
